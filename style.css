@@ -32,6 +32,7 @@ section{
     border: 1px solid black;
     width: 50%;
     height: 50%;
+    position: relative;
 }
 
 
@@ -80,4 +81,26 @@ section{
     justify-content: center;
     align-items: center;
     font-size: 36px;
+}
+
+img{
+    height: 75px; 
+    position: absolute;
+    bottom: 5px;
+    left: 5px;    
+}
+
+/* #temp img{
+    width: 50px;
+} */
+
+h3{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+span{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }
