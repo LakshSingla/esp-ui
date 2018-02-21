@@ -23,6 +23,10 @@ section{
     position: relative;
 }
 
+section:nth-of-type(1){
+    height: 40vh;
+}
+
 #data{
     display: flex;
     flex-wrap: wrap;
@@ -44,10 +48,10 @@ section{
 }
 
 .circle-1{
-    width: 45vh;
-    height: 45vh; 
-    left: calc( (100% - 45vh) / 2) ;
-    top: calc((100% - 45vh) / 2);
+    width: 35vh;
+    height: 35vh; 
+    left: calc( (100% - 35vh) / 2) ;
+    top: calc((100% - 35vh) / 2);
     opacity: 0.5;
 }
 
