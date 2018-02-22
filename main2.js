@@ -35,10 +35,12 @@ var parseRequest = function(req){
 
 sendReq.addEventListener('click', function(){
     $.ajax('http://' + ipInput.value + '/getdata' , {
+        headers : {
+            'Access-Control-Allow-Origin' : '*'
+        },
         complete: function(jqXHR, textStatus){
             console.log(jqXHR);
             sensorReadings = parseRequest(jqXHR.responseText);
-            
             var temp      = sensorReadings[0],
                 humidity  = sensorReadings[1],
                 pollution = sensorReadings[2],
