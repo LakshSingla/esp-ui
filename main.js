@@ -1,4 +1,4 @@
-var ip = '192.168.43.155';
+// var ip = '192.168.43.155';
 var sendReq = document.querySelector('.circle-main');
 
 var tempSpan      = document.querySelector('#temp span'),
