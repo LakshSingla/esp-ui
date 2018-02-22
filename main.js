@@ -11,6 +11,8 @@ var TEMP_UNITS      = "",
     POLLUTION_UNITS = "",
     DUST_UNITS      = "";
 
+var ipInput = document.querySelector("#ip-input");
+
 var parseRequest = function(req){
     var i = 0;
     var data = [];
@@ -32,7 +34,7 @@ var parseRequest = function(req){
 }
 
 sendReq.addEventListener('click', function(){
-    $.ajax(ip + '/getdata' , {
+    $.ajax(ipInput.value + '/getdata' , {
         complete: function(jqXHR, textStatus){
             console.log(jqXHR);
             sensorReadings = parseRequest(jqXHR.responseText);
