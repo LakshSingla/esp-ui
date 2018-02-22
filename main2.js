@@ -34,7 +34,7 @@ var parseRequest = function(req){
 }
 
 sendReq.addEventListener('click', function(){
-    $.ajax(ipInput.value + '/getdata' , {
+    $.ajax('http://' + ipInput.value + '/getdata' , {
         complete: function(jqXHR, textStatus){
             console.log(jqXHR);
             sensorReadings = parseRequest(jqXHR.responseText);
