@@ -49,7 +49,7 @@ sendReq.addEventListener('click', function(){
             tempSpan.textContent      = temp      + TEMP_UNITS;
             humiditySpan.textContent  = humidity  + HUMIDITY_UNITS;
             pollutionSpan.textContent = pollution + POLLUTION_UNITS;
-            dustSpan.textContent      = dustSpan  + DUST_UNITS;
+            dustSpan.textContent      = dust      + DUST_UNITS;
         }
     });
 });
